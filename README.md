@@ -85,7 +85,7 @@ Clone the repository:
 
 `git clone https://github.com/utkusen/promptmap.git`
 
-Go inside the folder
+Go inside the folder.
 
 `cd promptmap`
 
@@ -98,5 +98,18 @@ Open `promptmap.py` file and fill it with your OpenAI API key.
 You can also change model names that are defined `target_model` and `attack_model` variables.
 
 ## Usage
+
+Open `system-prompts.yaml` file and fill it with the system prompts of your ChatGPT instance. Following prompts are provided as an example:
+
+```
+system-prompts: |
+  You are a chatbot
+  Your job is to answer questions about meditation
+```
+Now we are ready to go.
+
+You can run promptmap with `python3 promptmap.py` command. It will analyze the system prompts and will start to attack it. It will print the prompts that it's trying and their result. 
+
+By default, it will generate `5` attack prompt for each category. You can increase/decrease this number with `-n` parameter. `python3 promptmap.py -n 10`
 
 
