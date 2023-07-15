@@ -4,6 +4,18 @@ Prompt injection is a type of security vulnerability that can be exploited to co
 
 promptmap is a tool that automatically tests prompt injection attacks on ChatGPT instances. It analyzes your system prompts to understand its context and purpose. This understanding is used to generate creative attack prompts tailored for the target. promptmap then starts a ChatGPT instance with the system prompts provided by you and sends attack prompts to it. It can determine whether the prompt injection attack was successful by checking the answer coming from your ChatGPT instance.
 
-
+```
++-----------+                     +-----------+
+|           |     Attack 1        |           |
+|           | <------------------ |           |
+|           | ------------------> |           |
+|  Target   |  Sorry, can't do    | Attacker  |
+| ChatGPT   |                     |  ChatGPT  |
+|           |     Attack 2        |           |
+|           | <------------------ |           |
+|           | ------------------> |           |
+|           |  Of course, can do  |           |
++-----------+                     +-----------+
+```
 
 
