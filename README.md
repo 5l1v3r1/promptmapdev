@@ -118,4 +118,7 @@ You can also save successful attack prompts to a json file. You can specify the 
 
 `python3 promptmap.py -o prompts.json`
 
+## Contributions
+
+I am open to feedback on this project. This is a new area for me, and I am still learning what is going on. Please feel free to add anything, make any criticisms, or suggest any changes. I appreciate your help in making this project the best it can be.
 
