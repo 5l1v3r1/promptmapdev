@@ -110,6 +110,12 @@ Now we are ready to go.
 
 You can run promptmap with `python3 promptmap.py` command. It will analyze the system prompts and will start to attack it. It will print the prompts that it's trying and their result. 
 
-By default, it will generate `5` attack prompt for each category. You can increase/decrease this number with `-n` parameter. `python3 promptmap.py -n 10`
+By default, it will generate `5` attack prompt for each category. You can increase/decrease this number with `-n` parameter. 
+
+`python3 promptmap.py -n 10`
+
+You can also save successful attack prompts to a json file. You can specify the output path with `-o` flag.
+
+`python3 promptmap.py -o prompts.json`
 
 
