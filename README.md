@@ -93,7 +93,7 @@ Install required libraries
 
 `pip3 install -r requirements.txt`
 
-Open `promptmap.py` file and fill it with your OpenAI API key. 
+Open `promptmap.py` file and add your OpenAI API key into the following line: `openai.api_key = "YOUR KEY HERE"`
 
 You can also change model names that are defined `target_model` and `attack_model` variables.
 
